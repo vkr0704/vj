@@ -1,0 +1,37 @@
+<%= form_for(@frnd) do |f| %>
+  <% if @frnd.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@frnd.errors.count, "error") %> prohibited this frnd from being saved:</h2>
+
+      <ul>
+      <% @frnd.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :bd %><br />
+    <%= f.date_select :bd %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile %><br />
+    <%= f.text_field :mobile %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

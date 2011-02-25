@@ -1,0 +1,21 @@
+<CENTER><h1>Search Here</h1>
+<br>
+<%= form_tag :action =>""%>
+<%= text_field_tag "q",""%>
+<%= submit_tag "Go...."%>
+<br><br>
+<h1><%=@q%></h1>
+<br>
+<table border="1"><tr>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Gender</td></tr>
+<% @name.each do |h|%><tr>
+<td><%=h.name%></td>
+<td><%=h.age%></td>
+<td><%=h.gender%></td></tr>
+<%end%>
+</table>
+<br>
+<%= link_to "back", :action=>"index"%>
+</CENTER>

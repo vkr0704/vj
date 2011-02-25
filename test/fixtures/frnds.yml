@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  \name: MyString
+  age: 1
+  gender: MyString
+  bd: 2011-02-18
+  mobile: 1
+
+two:
+  \name: MyString
+  age: 1
+  gender: MyString
+  bd: 2011-02-18
+  mobile: 1

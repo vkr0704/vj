@@ -1,0 +1,32 @@
+<CENTER><h1>Listing frnds</h1>
+
+<table border="1">
+  <tr>
+    <th>name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Bd</th>
+    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @frnds.each do |frnd| %>
+  <tr>
+    <td><%= frnd.name %></td>
+    <td><%= frnd.age %></td>
+    <td><%= frnd.gender %></td>
+    <td><%= frnd.bd %></td>
+
+    <td><%= link_to 'Show', frnd %></td>
+    <td><%= link_to 'Edit', edit_frnd_path(frnd) %></td>
+    <td><%= link_to 'Destroy', frnd, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= button_to 'New Frnd', new_frnd_path %>
+</CENTER>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>name:</b>
+  <%= @frnd.name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @frnd.age %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @frnd.gender %>
+</p>
+
+<p>
+  <b>Bd:</b>
+  <%= @frnd.bd %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%= @frnd.mobile %>
+</p>
+
+
+<%= link_to 'Edit', edit_frnd_path(@frnd) %> |
+<%= link_to 'Back', frnds_path %>

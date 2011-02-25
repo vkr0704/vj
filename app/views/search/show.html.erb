@@ -1,0 +1,9 @@
+<h1><%=@q%></h1>
+<br><br>
+<% @name.each do |h|%>
+<%=h.name%>
+<%=h.age%>
+<%=h.gender%><br>
+<%end%>
+<br><br>
+<%= link_to "back", :action=>"index"%>
